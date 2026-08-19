@@ -27,7 +27,8 @@ pipeline {
  }
  stage('Test') {
  steps {
- echo 'Running tests...'
+  echo 'Running tests...'
+        error 'Test failed!'
  }
  }
  stage('Deploy') {
